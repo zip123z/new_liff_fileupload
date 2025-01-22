@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文件管理</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>文件管理 v1.0.0</h1>
+    
+    <div id="upload-section" class="hidden">
+      <form id="upload-form">
+        <input type="file" id="file-input" multiple>
+        <button type="submit">上傳文件</button>
+      </form>
+    </div>
+
+    <div class="file-list">
+      <h2>文件列表</h2>
+      <table id="file-table">
+        <thead>
+          <tr>
+            <th>文件名</th>
+            <th>類型</th>
+            <th>大小</th>
+            <th>上傳時間</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 文件列表將動態插入 -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

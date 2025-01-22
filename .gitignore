@@ -1,0 +1,14 @@
+# 環境變數
+.env
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# 系統文件
+.DS_Store
+Thumbs.db
+
+# 編輯器配置
+.vscode/
+.idea/
