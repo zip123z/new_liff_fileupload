@@ -16,6 +16,11 @@ if (!fs.existsSync('uploads')) {
 app.use(express.json());
 app.use(express.static('public'));
 
+// 重定向根路徑到public/index.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 // 模擬用戶權限數據
 const userPermissions = {
   'user1': { canUpload: true },
